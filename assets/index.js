@@ -84,3 +84,9 @@ function displayMovie(movie) {
 
   const movieDetails = document.createElement("div");
   movieDetails.classList.add("movie-details");
+
+  const movieLink = document.createElement("a");
+  movieLink.href = `https://www.imdb.com/title/${movie.imdbID}/`;
+  movieLink.target = "_blank";
+  movieLink.textContent = movie.Title;
+  movieLink.classList.add("movie-link");
