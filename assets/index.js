@@ -77,3 +77,7 @@ function displayMovie(movie) {
   moviePoster.src = movie.Poster;
   moviePoster.alt = movie.Title + " poster";
   moviePoster.classList.add("movie-poster");
+
+  const movieTitle = document.createElement("h2");
+  movieTitle.textContent = movie.Title;
+  movieTitle.classList.add("movie-title");
