@@ -93,3 +93,6 @@ function displayMovie(movie) {
 
   const movieYear = document.createElement("span");
   movieYear.textContent = movie.Year;
+
+  movieDetails.appendChild(movieLink);
+  movieDetails.appendChild(movieYear);
