@@ -68,3 +68,7 @@ function displayMovie(movie) {
     if (movie.Poster === "N/A") {
       return;
     }
+
+    // Create DOM elements for the movie card
+  const movieCard = document.createElement("div");
+  movieCard.classList.add("movie-card");
