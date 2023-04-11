@@ -1,33 +1,14 @@
 # Movie-Indexer
 
-I am pleased to share with the community my latest application where I built an interactive workday scheduler using HTML, CSS, and JavaScript, powered by jQuery. This scheduler allows users to save events for specific hours of the day and ensures that their inputs are still there when they come back to the scheduler website.
-
 ## Description
-
-Users can take advantage of the interactive workday scheduler built using HTML, CSS, and JavaScript, powered by jQuery. This scheduler allows them to save events for specific hours of the day and ensures that their inputs are still there when they come back to the scheduler.
-
-The scheduler has a clean and modern user interface, making it easy for users to input their events quickly and intuitively. Users can simply click on the hour block for which they want to schedule an event, and the scheduler opens up a text box where they can enter their event details.
-
-To ensure that their inputs are always saved, the scheduler uses JavaScript to store the events that users input. This way, users don't have to worry about losing any information, even when they navigate away from the page or close their browser. When users return to the scheduler, they can see their saved events and make any necessary changes or updates.
-
-Users can take advantage of a number of other useful features built into the scheduler. For example, they can color-code events by priority or type, and view events for different days. These features make it easy for users to stay organized and manage their workload effectively.
-
-The scheduler is a dynamic and interactive application that responds to user input in real-time, updating the user interface to reflect any changes. This has made the scheduler a valuable tool for users in staying on top of their schedule and achieving their goals.
-
-Overall, users can rely on this workday scheduler to store their events and access them at any time, even if they navigate away from the page or close their browser. This makes it a useful tool for anyone looking to stay organized and manage their workload effectively.
 
 ---
 
 ## Take A Look At My Application!
 
-\*\*\* REPLACE
-![Work Day Scheduler Application](https://user-images.githubusercontent.com/127361736/230523184-8a438d4e-b54c-4971-b092-6f829532b902.gif)
-
 ## Links
 
-\*\*\* REPLACE
-
-- Link to live application https://codenamenoah.github.io/Work-Day-Planner/
+- Link to live application https://codenamenoah.github.io/Movie-Indexer/
 
 ---
 
@@ -37,7 +18,7 @@ Overall, users can rely on this workday scheduler to store their events and acce
 
 1. Click on the green code button and copy the link for the SSH key.
 2. Once clip-boarded load up a command line interface and change directory to one of your preference
-3. Enter in the command `git clone git@github.com:CodeNameNoah/Work-Day-Planner.git`
+3. Enter in the command `git clone git@github.com:CodeNameNoah/Movie-Indexer.git`
 4. Enter your protected SSH password
 5. Enjoy!
 
@@ -51,14 +32,12 @@ Overall, users can rely on this workday scheduler to store their events and acce
 
 ## Usage
 
-\*\*\* REPLACE
+1. Click on the link to the live application of the Movie-Indexer
+2. Type the name of a movie or genre you would like to search up
+3. Click the search button to invoke a query of the specified text you previously typed in the search field
+4. You will then be directed to another page where you can view the catalog of movies or genre you searched up.
 
-1. Click on the link to the live application of the Work Day Scheduler/Planner
-2. Type a name you would like to store as an event in the respective hour slot.
-3. Click the lavender button with the save icon to record your event.
-4. Voila! Your event is now recorded and you can visit this page again to view your events through your busy day!
-
-- Note that the time slots are color coded. Green blocks represent future events. Yellow blocks represent present events. Grey blocks represent past events.
+- Note that you can still search even within the results page.
 
 ## Credits
 
