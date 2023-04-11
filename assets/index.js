@@ -24,7 +24,7 @@ searchForm.addEventListener("submit", (e) => {
     }
   });
 
-  // Function to search for movies
+// Function to search for movies
 // Function to search for movies: The searchMovies function takes a search term as an argument, 
 // clears any existing search results, constructs the API URL with the search term, and makes a request to the OMDb API. 
 // If the API returns an array of movies, the displayMovie function is called for each movie. 
@@ -57,3 +57,5 @@ function searchMovies(searchTerm) {
         movieList.innerHTML = errorMessage;
       });
   }
+  
+  //
