@@ -58,4 +58,13 @@ function searchMovies(searchTerm) {
       });
   }
   
-  //
+  // Function to display a movie: The displayMovie function takes a movie object as an argument,
+// checks if the movie has a valid poster image, and creates a set of DOM elements to display the movie's poster, title, and year. 
+// A click event listener is added to the movie card, which, when clicked, logs the movie's title in the console (you can replace this with code to display additional movie information). 
+// Finally, the movie card is appended to the movieList element.
+
+function displayMovie(movie) {
+    // Check if movie object has a valid poster image
+    if (movie.Poster === "N/A") {
+      return;
+    }
