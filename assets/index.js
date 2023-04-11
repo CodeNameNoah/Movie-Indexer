@@ -23,3 +23,48 @@ searchForm.addEventListener("submit", (e) => {
       searchMovies(searchTerm);
     }
   });
+
+// Function to search for movies
+// Function to search for movies: The searchMovies function takes a search term as an argument, 
+// clears any existing search results, constructs the API URL with the search term, and makes a request to the OMDb API. 
+// If the API returns an array of movies, the displayMovie function is called for each movie. 
+// If no movies are found or an error occurs, an error message is displayed.
+function searchMovies(searchTerm) {
+    // Clear any existing search results
+    movieList.innerHTML = "";
+  
+    // Construct API URL with search term
+    const url = `${apiUrl}&s=${searchTerm}&type=movie`;
+  
+    // Make API request
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.Search) {
+          // Display search results
+          data.Search.forEach((movie) => {
+            displayMovie(movie);
+          });
+        } else {
+          // Display error message
+          const errorMessage = `<p>No movies found matching "${searchTerm}".</p>`;
+          movieList.innerHTML = errorMessage;
+        }
+      })
+      .catch((error) => {
+        // Display error message
+        const errorMessage = `<p>Error fetching movies: ${error.message}</p>`;
+        movieList.innerHTML = errorMessage;
+      });
+  }
+  
+  // Function to display a movie: The displayMovie function takes a movie object as an argument,
+// checks if the movie has a valid poster image, and creates a set of DOM elements to display the movie's poster, title, and year. 
+// A click event listener is added to the movie card, which, when clicked, logs the movie's title in the console (you can replace this with code to display additional movie information). 
+// Finally, the movie card is appended to the movieList element.
+
+function displayMovie(movie) {
+    // Check if movie object has a valid poster image
+    if (movie.Poster === "N/A") {
+      return;
+    }
