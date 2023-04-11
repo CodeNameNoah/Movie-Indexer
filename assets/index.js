@@ -90,3 +90,6 @@ function displayMovie(movie) {
   movieLink.target = "_blank";
   movieLink.textContent = movie.Title;
   movieLink.classList.add("movie-link");
+
+  const movieYear = document.createElement("span");
+  movieYear.textContent = movie.Year;
