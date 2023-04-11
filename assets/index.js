@@ -10,3 +10,16 @@ const apiUrl = "https://www.omdbapi.com/?apikey=8e83ab41";
 const searchForm = document.querySelector("#search-form");
 const searchInput = document.querySelector("#search-input");
 const movieList = document.querySelector("#movie-list");
+
+// Event listener for search form submission
+// Event listener for search form submission: An event listener is added to the searchForm element, 
+// which listens for the "submit" event. When the form is submitted, the event is prevented from refreshing the page, 
+// and the searchMovies function is called with the user's search term.
+
+searchForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const searchTerm = searchInput.value.trim();
+    if (searchTerm !== "") {
+      searchMovies(searchTerm);
+    }
+  });
