@@ -72,3 +72,8 @@ function displayMovie(movie) {
     // Create DOM elements for the movie card
   const movieCard = document.createElement("div");
   movieCard.classList.add("movie-card");
+
+  const moviePoster = document.createElement("img");
+  moviePoster.src = movie.Poster;
+  moviePoster.alt = movie.Title + " poster";
+  moviePoster.classList.add("movie-poster");
