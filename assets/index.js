@@ -81,3 +81,6 @@ function displayMovie(movie) {
   const movieTitle = document.createElement("h2");
   movieTitle.textContent = movie.Title;
   movieTitle.classList.add("movie-title");
+
+  const movieDetails = document.createElement("div");
+  movieDetails.classList.add("movie-details");
