@@ -99,3 +99,17 @@ function displayMovie(movie) {
 
   movieCard.appendChild(moviePoster);
   movieCard.appendChild(movieDetails);
+
+  // Add click event listener to the movie card
+  movieCard.addEventListener("click", () => {
+    // Display more information about the movie, such as plot summary, cast and crew, etc.
+    // You can use another API to fetch this information, or display it using a modal or a separate page.
+    console.log("Movie card clicked: " + movie.Title);
+  });
+
+  movieList.appendChild(movieCard);
+}
+
+// this JavaScript code allows users to search for movies by title, fetches movie data from the OMDb API, 
+// and displays the search results in a visually appealing way. When a user clicks on a movie card, 
+// you can add functionality to display more information about the movie, such as a plot summary, cast and crew, etc.
