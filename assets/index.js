@@ -23,3 +23,37 @@ searchForm.addEventListener("submit", (e) => {
       searchMovies(searchTerm);
     }
   });
+
+  // Function to search for movies
+// Function to search for movies: The searchMovies function takes a search term as an argument, 
+// clears any existing search results, constructs the API URL with the search term, and makes a request to the OMDb API. 
+// If the API returns an array of movies, the displayMovie function is called for each movie. 
+// If no movies are found or an error occurs, an error message is displayed.
+function searchMovies(searchTerm) {
+    // Clear any existing search results
+    movieList.innerHTML = "";
+  
+    // Construct API URL with search term
+    const url = `${apiUrl}&s=${searchTerm}&type=movie`;
+  
+    // Make API request
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.Search) {
+          // Display search results
+          data.Search.forEach((movie) => {
+            displayMovie(movie);
+          });
+        } else {
+          // Display error message
+          const errorMessage = `<p>No movies found matching "${searchTerm}".</p>`;
+          movieList.innerHTML = errorMessage;
+        }
+      })
+      .catch((error) => {
+        // Display error message
+        const errorMessage = `<p>Error fetching movies: ${error.message}</p>`;
+        movieList.innerHTML = errorMessage;
+      });
+  }
