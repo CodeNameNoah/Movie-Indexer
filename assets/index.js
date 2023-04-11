@@ -96,3 +96,6 @@ function displayMovie(movie) {
 
   movieDetails.appendChild(movieLink);
   movieDetails.appendChild(movieYear);
+
+  movieCard.appendChild(moviePoster);
+  movieCard.appendChild(movieDetails);
