@@ -1,0 +1,29 @@
+/* Style the movie rating */
+.movie-rating {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Style the movie year */
+  .movie-year {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+  /* Style the search form */
+  #search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #search-input {
+    width: 300px;
+    margin-right: 10px;
+  }
+  
