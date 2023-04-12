@@ -91,3 +91,24 @@ h1 {
     font-size: 1rem;
     font-style: italic;
 }
+
+.movie-card {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-poster {
+    display: block;
+    margin: 0 auto 10px;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
