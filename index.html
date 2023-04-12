@@ -5,23 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinexplorer - Movie Search Engine</title>
     <!-- Materialize CSS Framework CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Link to google font materials to be able to render icons in page -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap">
+    <link rel="stylesheet" rel="stylesheet" href="./assets/style.css" />
+    <title>Cinexplorer - Movie Search Engine</title>
 </head>
 
 <body>
-    <div class="container center-align">
-        <h1 class="header">Cinexplorer</h1>
+    <div class="container">
+        <h1 class="center-align">Cinexplorer</h1>
         <div class="row">
-            <form id="search-form col s12">
-
+            <form id="search-form" class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="search-input" type="text" class="validate">
+                        <label for="search-input">Search by Movie Title or Genre</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Search
+                            <i class="material-icons right">search</i>
+                        </button>
+                    </div>
+                </div>
             </form>
-            <div class="input-field">
-                <input>
-            </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </div>
+    <!-- Creates a container for the search results which will be dynamically introduced within the JavaScript files -->
+    <div id="movie-list" class="row"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/index.js"></script>
 </body>
 
 </html>
