@@ -1,6 +1,6 @@
 # Movie-Indexer
 
-I am excited to tell you about the application my team and I made using HTML, CSS, JavaScript, APIs from OMBD movies, and a Bootstrap alternative known as Materialize. Our application is designed to provide users with an easy and efficient way to search for information about their favorite movies.
+We are excited to tell you about the application my team and I made using HTML, CSS, JavaScript, APIs from OMBD movies, and a Bootstrap alternative known as Materialize. Our application is designed to provide users with an easy and efficient way to search for information about their favorite movies.
 
 ## Description
 
@@ -16,13 +16,22 @@ Overall, our application is a powerful tool that simplifies the movie-searching 
 
 ## Languages and Technologies Used
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,git)](https://skillicons.dev)
+[![Socials](https://skillicons.dev/icons?i=html,css,js,git)](https://skillicons.dev)
 
-| Additional Libraries Used |  Link  |
-| :-----------------------: | :----: |
-|       `Materialize`       | `LINK` |
-|    `Google Fonts API`     | `LINK` |
-|        `OMBD API`         | `LINK` |
+| Additional Libraries Used |                    Link                     |
+| :-----------------------: | :-----------------------------------------: |
+|       `Materialize`       |     [LINK](https://materializecss.com/)     |
+|    `Google Fonts API`     | [LINK](https://developers.google.com/fonts) |
+|        `OMBD API`         |      [LINK](https://www.omdbapi.com/)       |
+
+---
+
+|     Collaborators      |                                                                                                                                  Socials                                                                                                                                   |
+| :--------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|      `Noah Hoang`      | [![Socials](https://skillicons.dev/icons?i=git)](https://github.com/codenamenoah) [![Socials](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/codenamenoah/) [![Socials](https://skillicons.dev/icons?i=twitter)](https://twitter.com/CodeNameNoahH) |
+| `Tia 'Michelle' Baker` |                                     [![Socials](https://skillicons.dev/icons?i=git)](-) [![Socials](https://skillicons.dev/icons?i=linkedin)](-) [![Socials](https://skillicons.dev/icons?i=twitter)](https://github.com/codenamenoah)                                     |
+|     `Kyle Wayland`     |                      [![Socials](https://skillicons.dev/icons?i=git)](-) [![Socials](https://skillicons.dev/icons?i=linkedin)](https://github.com/codenamenoah) [![Socials](https://skillicons.dev/icons?i=twitter)](https://github.com/codenamenoah)                      |
+|   `Afi Nkhume-Crecy`   |                                                    [![Socials](https://skillicons.dev/icons?i=git)](-) [![Socials](https://skillicons.dev/icons?i=linkedin)](-) [![Socials](https://skillicons.dev/icons?i=twitter)](-)                                                    |
 
 ---
 
