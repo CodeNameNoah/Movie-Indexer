@@ -53,3 +53,41 @@ h1 {
 .movie-card:hover {
     transform: scale(1.05);
 }
+
+.movie-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.movie-card:hover img {
+    transform: scale(1.1);
+}
+
+.movie-card h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.movie-card .movie-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #ffffff;
+}
+
+.movie-card .movie-rating {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.movie-card .movie-year {
+    color: #ffffff;
+    font-size: 1rem;
+    font-style: italic;
+}
