@@ -39,3 +39,17 @@ h1 {
 .btn:hover {
     background-color: #fd6a34;
 }
+
+.movie-card {
+    width: 250px;
+    margin: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
