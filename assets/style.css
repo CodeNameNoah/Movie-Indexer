@@ -55,3 +55,24 @@
     margin-top: 0.5rem;
     font-size: 0.9rem;
   }
+  .movie-links a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .movie-links a:hover {
+    text-decoration: underline;
+  }
+  .movie-title-link {
+    text-decoration: none;
+    color: black;
+  }
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode .movie-card {
+    background-color: #444;
+    border-color: #555;
+  }
