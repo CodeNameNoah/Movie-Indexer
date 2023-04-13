@@ -121,7 +121,16 @@ function displayMovie(movie) {
 
 // The setBackgroundImage function is an asynchronous function, which means it can perform operations that take some time to complete, such as fetching data from an API.
 // Define the API endpoint URL with the search query set to "movies" and the number of results per page set to 40.
+ // Fetch data from the Pexels API using the fetch function. The headers object contains the API key for authorization.
 const setBackgroundImage = async () => {
   const url = `https://api.pexels.com/v1/search?query=inspiration&per_page=40`;
 
 
+  try {
+    const response = await fetch(url, {
+      headers: {
+        'Authorization': pexelsApiKey
+      }
+    });
+
+  }
