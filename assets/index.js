@@ -1,17 +1,17 @@
 //This JavaScript code is designed to fetch and display a list of movies based on a user's search query using the OMDb API.
 
 
-// API endpoint
+
 // API endpoint: The apiUrl variable holds the base URL for the OMDb API, which is used to fetch movie data.
 const apiUrl = "https://www.omdbapi.com/?apikey=8e83ab41";
 
-// DOM elements
+
 // DOM elements: Three variables (searchForm, searchInput, and movieList) store references to DOM elements, which are used to handle user input and display search results.
 const searchForm = document.querySelector("#search-form");
 const searchInput = document.querySelector("#search-input");
 const movieList = document.querySelector("#movie-list");
 
-// Event listener for search form submission
+
 // Event listener for search form submission: An event listener is added to the searchForm element, 
 // which listens for the "submit" event. When the form is submitted, the event is prevented from refreshing the page, 
 // and the searchMovies function is called with the user's search term.
@@ -24,7 +24,7 @@ searchForm.addEventListener("submit", (e) => {
     }
   });
 
-// Function to search for movies
+
 // Function to search for movies: The searchMovies function takes a search term as an argument, 
 // clears any existing search results, constructs the API URL with the search term, and makes a request to the OMDb API. 
 // If the API returns an array of movies, the displayMovie function is called for each movie. 
@@ -33,13 +33,11 @@ function searchMovies(searchTerm) {
     // Clear any existing search results
     movieList.innerHTML = "";
   
-    // Construct API URL with search term
-    // jQuery method of string interpolation is used in order to write out the variables using the back ticks to concatenate using the query parameters given by OMDb.
+    // Construct API URL with search term: jQuery method of string interpolation is used in order to write out the variables using the back ticks to concatenate using the query parameters given by OMDb.
     // the below url is created using the search term values in tandem with api url. 
     const url = `${apiUrl}&s=${searchTerm}&type=movie`;
   
-    // Make API request
-    // The function makes a fetch request to the constructed URL. If the request is successful, it parses the response as JSON and checks if the data object returned has a property called Search.
+    // Make API request: The function makes a fetch request to the constructed URL. If the request is successful, it parses the response as JSON and checks if the data object returned has a property called Search.
     // The then() method is called on the resulting promise, which takes two callback functions. The first callback function takes the response object and returns its JSON representation. The second callback function takes the parsed JSON object as its argument, checks if it contains a property called Search, and iterates through its array value (which is an array of movie objects) using the forEach() method. For each movie object, the displayMovie() function is called with the movie object as its argument.
     // If the fetch request fails, the function catches the error and displays an error message indicating the reason for the failure.
     fetch(url)
