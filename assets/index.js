@@ -118,3 +118,19 @@ function displayMovie(movie) {
 // this JavaScript code allows users to search for movies by title, fetches movie data from the OMDb API, 
 // and displays the search results in a visually appealing way. When a user clicks on a movie card, 
 // you can add functionality to display more information about the movie, such as a plot summary, cast and crew, etc.
+
+// The setBackgroundImage function is an asynchronous function, which means it can perform operations that take some time to complete, such as fetching data from an API.
+// Define the API endpoint URL with the search query set to "movies" and the number of results per page set to 40.
+ // Fetch data from the Pexels API using the fetch function. The headers object contains the API key for authorization.
+const setBackgroundImage = async () => {
+  const url = `https://api.pexels.com/v1/search?query=inspiration&per_page=40`;
+
+
+  try {
+    const response = await fetch(url, {
+      headers: {
+        'Authorization': pexelsApiKey
+      }
+    });
+
+  }
