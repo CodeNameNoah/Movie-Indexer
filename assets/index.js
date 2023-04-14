@@ -37,7 +37,7 @@ searchForm.addEventListener("submit", (e) => {
     "previousSearches",
     JSON.stringify(prevSearchTermsArray)
   );
- 
+
   addSearchTermToAside(searchTerm);
 });
 
@@ -181,7 +181,7 @@ function displayMovie(movie) {
 // If there's an error while fetching the background image, log the error message.
 
 const setBackgroundImage = async () => {
-  const url = `https://api.pexels.com/v1/search?query=inspiration&per_page=40`;
+  const url = `https://api.pexels.com/v1/search?query=movies`;
 
   try {
     const response = await fetch(url, {
@@ -191,7 +191,7 @@ const setBackgroundImage = async () => {
     });
     const data = await response.json();
     const randomIndex = Math.floor(Math.random() * data.photos.length);
-    const imageUrl = data.photos[randomIndex].src.large;
+    const imageUrl = data.photos[randomIndex].src.original;
     document.body.style.backgroundImage = `url(${imageUrl})`;
   } catch (error) {
     console.error(`Error fetching background image: ${error}`);
