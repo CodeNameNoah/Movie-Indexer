@@ -218,6 +218,14 @@ h1 {
   cursor: grab;
 }
 
+.form {
+    /* border: solid 2px red; */
+}
+
+.aside {
+    border: solid 2px white;
+    min-height: 10vh;
+}
 
 @keyframes spin {
   100% {
