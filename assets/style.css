@@ -1,216 +1,226 @@
 body {
-    background-image: url('./images/Project-Bear-Cinexplorer.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  background-image: url('./images/Project-Bear-Cinexplorer.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1 {
-    font-size: 5rem;
-    font-family: inherit;
-    font-weight: bold;
-    color: #e8e9e4;
-    text-align: center;
-    margin-bottom: 40px;
-    text-shadow: 0px 0px 3px #000000;
+  font-size: 5rem;
+  font-family: inherit;
+  font-weight: bold;
+  color: #e8e9e4;
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 0px 0px 3px #000000;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .form-control {
-    font-size: 1.2rem;
-    border-radius: 0;
+  font-size: 1.2rem;
+  border-radius: 0;
 }
 
 .btn {
-    background-color: #89aaa9;
-    font-size: 1.2rem;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+  background-color: #89aaa9;
+  font-size: 1.2rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .btn:hover {
-    background-color: #fd6a34;
+  background-color: #fd6a34;
 }
 
 .movie-card {
-    width: 250px;
-    margin: 1rem;
-    background-color: #ffffff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow: hidden;
-    transition: transform 0.2s ease;
+  width: 250px;
+  margin: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
 }
 
 .movie-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .movie-card img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    transition: transform 0.2s ease;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.2s ease;
 }
 
 .movie-card:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .movie-card h2 {
-    font-size: 1.2rem;
-    margin: 0.5rem;
-    text-align: center;
-    text-shadow: 1px 1px 0px #000000;
-    padding-top: 13px;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 0px #000000;
+  padding-top: 13px;
 }
 
 .movie-card .movie-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-    background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #ffffff;
 }
 
 .movie-card .movie-rating {
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.2rem;
 }
 
 .movie-card .movie-year {
-    color: #ffffff;
-    font-size: 1rem;
-    font-style: italic;
+  color: #ffffff;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .movie-card {
-    width: 300px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
-    vertical-align: top;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .movie-poster {
-    display: block;
-    margin: 0 auto 10px;
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-/* Style the movie rating */
-.movie-rating {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  /* Style the movie year */
-  .movie-year {
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: normal;
-  }
-  
-  /* Style the search form */
-  #search-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  #search-input {
-    width: 300px;
-    margin-right: 10px;
-  }
-  /* Style the search button */
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0069d9;
-    border-color: #0062cc;
-  }
-  
-  /* Style the error message */
-  .error-message {
-    color: red;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  .movie-card a {
-    position: relative;
-    z-index: 2;
-  }
-  .movie-links {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-  }
-  .movie-links a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .movie-links a:hover {
-    text-decoration: underline;
-  }
-  .movie-title-link {
-    text-decoration: none;
-    color: black;
-  }
-  .dark-mode {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .dark-mode .movie-card {
-    background-color: #444;
-    border-color: #555;
-  }
-  .spinner {
-    display: none;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border-left-color: #007bff;
-    animation: spin 1s linear infinite;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .movie-card:hover {
-    cursor: grab;
+  display: block;
+  margin: 0 auto 10px;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-  
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
+/* Style the movie rating */
+.movie-rating {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Style the movie year */
+.movie-year {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Style the search form */
+#search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  width: 300px;
+  margin-right: 10px;
+  background: #89aaa95c;
+}
+
+/* Style the search button */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+/* Style the error message */
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.movie-card a {
+  position: relative;
+  z-index: 2;
+}
+
+.movie-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.movie-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.movie-links a:hover {
+  text-decoration: underline;
+}
+
+.movie-title-link {
+  text-decoration: none;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .movie-card {
+  background-color: #444;
+  border-color: #555;
+}
+
+.spinner {
+  display: none;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-left-color: #007bff;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.movie-card:hover {
+  cursor: grab;
+}
+
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
+}
