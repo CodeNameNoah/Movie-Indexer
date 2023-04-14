@@ -4,6 +4,7 @@
 
 // API endpoint: The apiUrl variable holds the base URL for the OMDb API, which is used to fetch movie data.
 const apiUrl = "https://www.omdbapi.com/?apikey=8e83ab41";
+const pexelsApiKey = "6vpFja9hWeUY46qrRMFDBgNSiHVNmgc8am5qP9vqKMFiV1Wh4F4TZY7m";
 
 
 // DOM elements: Three variables (searchForm, searchInput, and movieList) store references to DOM elements, which are used to handle user input and display search results.
@@ -146,4 +147,5 @@ const setBackgroundImage = async () => {
     console.error(`Error fetching background image: ${error}`);
   }
 };
-  
+setBackgroundImage();
+
