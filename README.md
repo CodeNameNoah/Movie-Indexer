@@ -92,6 +92,10 @@ Overall, our application is a powerful tool that simplifies the movie-searching 
 
   - https://www.omdbapi.com/
 
+- Pexels API
+
+  - https://www.pexels.com/api/
+
 ## License
 
 Copyright (c) Microsoft Corporation. All rights reserved.
