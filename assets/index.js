@@ -124,6 +124,9 @@ function displayMovie(movie) {
  // Fetch data from the Pexels API using the fetch function. // The headers object contains the API key for authorization.
  // Parse the response data as JSON.
 // Generate a random index based on the length of the photos array to select a random photo from the results.
+ // Get the URL of the large-sized image from the randomly selected photo.
+ // Set the background image of the document body to the fetched image URL.
+// If there's an error while fetching the background image, log the error message.
 
 const setBackgroundImage = async () => {
   const url = `https://api.pexels.com/v1/search?query=inspiration&per_page=40`;
@@ -137,6 +140,10 @@ const setBackgroundImage = async () => {
     });
     const data = await response.json();
     const randomIndex = Math.floor(Math.random() * data.photos.length);
-
-    
+    const imageUrl = data.photos[randomIndex].src.large;
+    document.body.style.backgroundImage = `url(${imageUrl})`;
+  } catch (error) {
+    console.error(`Error fetching background image: ${error}`);
   }
+};
+  
